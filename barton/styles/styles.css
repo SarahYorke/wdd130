@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: outfit, ;
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
@@ -16,6 +16,10 @@ body {
     align-items: center;
     justify-content: center;
     
+}
+#top{
+    font-size: 100px;
+
 }
 
 header {
@@ -109,6 +113,7 @@ nav a:hover {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #EE964B;
 }
 
 footer {
