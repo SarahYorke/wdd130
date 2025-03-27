@@ -6,7 +6,7 @@
     <title>Barton</title> 
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
 </head>
-<header>
+<header id="AboutHeader">
     <a id="logo_link" href="index.html">
         <img class="logo" src="styles/images/Screenshot 2025-02-22 221146.png" alt="Logo">
     </a>
@@ -16,51 +16,53 @@
         <a href="aboutBarton.html">About Barton</a>
     </nav>
 </header>
-<div id="hero">
-    <img id="me" src="styles/images/IMG_6047.jpg" alt="">
-</div>
-<body>
-    <div class="dropdown-container">
-        <div class="dropdown">
-            <button onclick="toggleDropdown('dropdown1')">Where ▼</button>
-            <div id="dropdown1" class="dropdown-content">
-                <p>I prefer tutoring at my home to ensure the best learning environment for your child to grow! I believe the key to learning is a consistent schedule.</p>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button onclick="toggleDropdown('dropdown2')">Who ▼</button>
-            <div id="dropdown2" class="dropdown-content">
-                <p>My name is Sarah Yorke. I am 16 years old, and I have 12 siblings, multiple of whom have dyslexia too. I love to read, spend time with my little siblings, and listen to music!</p>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button onclick="toggleDropdown('dropdown3')">Why Me ▼</button>
-            <div id="dropdown3" class="dropdown-content">
-                <p>I graduated from Barton Reading and Writing, and it honestly changed my life! I have struggled all my life with different kinds of learning challenges. But that doesn't mean you can't get better and keep improving!</p>
-            </div>
-        </div>
+<div id="contentAbout">
+    <div id="hero">
+        <img id="me" src="styles/images/IMG_6047.jpg" alt="">
     </div>
+    <body>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown1')">Where ▼</button>
+                <div id="dropdown1" class="dropdown-content">
+                    <p>I prefer tutoring at my home to ensure the best learning environment for your child to grow! I believe the key to learning is a consistent schedule.</p>
+                </div>
+            </div>
 
-    <script>
-        function toggleDropdown(id) {
-            // Hide all dropdowns first
-            document.querySelectorAll('.dropdown-content').forEach(drop => {
-                drop.style.display = 'none';
-            });
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown2')">Who ▼</button>
+                <div id="dropdown2" class="dropdown-content">
+                    <p>My name is Sarah Yorke. I am 16 years old, and I have 12 siblings, multiple of whom have dyslexia too. I love to read, spend time with my little siblings, and listen to music!</p>
+                </div>
+            </div>
 
-            // Show the selected dropdown
-            let dropdown = document.getElementById(id);
-            if (dropdown.style.display === 'block') {
-                dropdown.style.display = 'none';
-            } else {
-                dropdown.style.display = 'block';
+            <div class="dropdown">
+                <button onclick="toggleDropdown('dropdown3')">Why Me ▼</button>
+                <div id="dropdown3" class="dropdown-content">
+                    <p>I graduated from Barton Reading and Writing, and it honestly changed my life! I have struggled all my life with different kinds of learning challenges. But that doesn't mean you can't get better and keep improving!</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleDropdown(id) {
+                // Hide all dropdowns first
+                document.querySelectorAll('.dropdown-content').forEach(drop => {
+                    drop.style.display = 'none';
+                });
+
+                // Show the selected dropdown
+                let dropdown = document.getElementById(id);
+                if (dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                } else {
+                    dropdown.style.display = 'block';
+                }
             }
-        }
-    </script>
+        </script>
 
-</body>
+    </body>
+</div>
 <footer>
     <p>Contact informatin</p>
     <p>phone: 417-291-4277</p>
